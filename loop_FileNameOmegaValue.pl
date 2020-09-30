@@ -10,7 +10,7 @@ closedir(DIR);
 my $file = ();
 
 foreach $file (@files) {
-	my $cmd = "ls $file >> omegaSummary.txt | grep 'omega (dN/dS) =  ' $file >> omegaSummary.txt";
+	my $cmd = "ls $file >> omegaSummary | grep 'omega (dN/dS) =  ' $file >> omegaSummary";
 	system($cmd);
 	}
 print "done\n";
