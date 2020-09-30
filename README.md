@@ -5,3 +5,6 @@ loop_codeml.pl: uses a loop to iterate through a directory of alignments and run
 The issue of needing a stdin for stop codons was solved here: https://groups.google.com/g/pamlsoftware/c/HNx4O_YMHVA?pli=1
 
 loop_FileNameOmegaValue.pl: uses a loop to iterate through a directory of to write out the file name and the omega value for each file to generate a data matrix.
+
+
+The paml package is here: http://abacus.gene.ucl.ac.uk/software/paml.html and the manuscript is here: https://doi.org/10.1093/molbev/msm088.
