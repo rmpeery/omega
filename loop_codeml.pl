@@ -3,7 +3,11 @@
 
 use strict;
 
-#Use: yes \n | perl LoopTest.pl 10kb.tre 
+# modify script call with yes \n to loop
+# without usser input for stop codons from
+# https://groups.google.com/g/pamlsoftware/c/HNx4O_YMHVA?pli=1
+
+# To use: yes \n | perl loop_codeml.pl 10kb.tre 
 
 opendir(DIR, ".");
 my @files = grep(/\.phy$/,readdir(DIR));
@@ -15,9 +19,6 @@ my $tre = shift;
 #my $pathDir = "nucl_aln_phy/";
 #my $pathTre = "treeFiles/";
 #my $pathOut = "codemlOut/";
-
-# to loop without usser input about stop codons per CDS used suggestion from
-# https://groups.google.com/g/pamlsoftware/c/HNx4O_YMHVA?pli=1
 
 # settings for one value per gene based on suggestion here:
 # https://www.researchgate.net/topic/PAML
