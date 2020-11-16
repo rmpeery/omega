@@ -23,8 +23,9 @@ my $tre = shift;
 # settings for one value per gene based on suggestion here:
 # https://www.researchgate.net/topic/PAML
 
-#had to mkdir codemlOut before script would run
-
+# had to mkdir codemlOut before script would run
+# idea for writing config files came from Mariya Shcheglovitova
+# https://github.com/mshcheg/PAMLpipeline/blob/master/paml.pipe.sh
 foreach $file (@files) {
 	open OUT, ">$file.codeml.ctl";
 	print OUT ("seqfile = path/$file
