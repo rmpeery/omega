@@ -37,8 +37,8 @@ foreach $file (@files) {
 	seqtype = 1
 	CodonFreq = 2
 	clock = 1
-	aaDist = 0
-	aaRatefile = wag.dat
+	* aaDist = 0
+	* aaRatefile = wag.dat
 	model = 0
 	NSsites = 0
 	icode = 0
